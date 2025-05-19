@@ -100,7 +100,7 @@ function KeyboardKeybinds:Update()
     -- Point any additional existing keybinds that we haven't mapped already to
     -- the OriginalKeybind instances.  This will cause them to be hidden during Take All,
     -- Take All by Subject and Take All by Sender.
-    for _, originalDescriptor in ipairs(self.original) do
+--[[    for _, originalDescriptor in ipairs(self.original) do
         local existing = addon.Utility.KeybindGetDescriptor(keybindGroup, originalDescriptor.keybind)
         if not existing then
             local keybind = addon.classes.OriginalKeybind:New(originalDescriptor)
@@ -109,7 +109,7 @@ function KeyboardKeybinds:Update()
             table.insert(keybindGroup, descriptor)
         end
     end
-    
+]]    
     -- Overwrite the keybind strip for the mouse/keyboard UI inbox
     MAIL_INBOX.selectionKeybindStripDescriptor = keybindGroup
     self.keybinds = keybinds
