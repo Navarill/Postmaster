@@ -2,7 +2,7 @@
 ## Author: silvereyes, Baertram, Garkin & Zierk
 ## Description: Mail addon to simplify inbox management
 ## Version: 4.1.8
-## APIVersion: 101046
+## APIVersion: 101046 101047
 ## AddOnVersion: 40108
 ## DependsOn: LibSavedVars>=60007 LibAddonMenu-2.0>=40 LibLootSummary>=30103 LibChatMessage>=118
 ## OptionalDependsOn: MailR wykkydsMailBox DolgubonsLazyWritCreator LibCustomMenu>=730
